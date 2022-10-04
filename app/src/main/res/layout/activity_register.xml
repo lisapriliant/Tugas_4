@@ -8,7 +8,6 @@
     tools:context=".RegisterActivity"
     >
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,13 +35,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
-            <ImageView
-                android:id="@+id/imageView"
+            <Button
+                android:id="@+id/imageBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 app:layout_constraintBottom_toBottomOf="@+id/image_profile"
                 app:layout_constraintEnd_toEndOf="@+id/image_profile"
-                app:srcCompat="@drawable/edit_icon"
+                android:background="@drawable/edit_icon"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -67,7 +66,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layout_email"
+                android:id="@+id/layout_nim"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
@@ -79,10 +78,10 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/text_email"
+                    android:id="@+id/text_nim"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="NIM"
                     android:inputType="textEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -96,7 +95,7 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layout_email"
+                app:layout_constraintTop_toBottomOf="@+id/layout_nim"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
